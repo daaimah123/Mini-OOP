@@ -30,6 +30,7 @@ class Event {
 
     searchTickets(lowerBound, upperBound) {
         // Handle edge cases: ensure lowerBound <= upperBound
+        // TO-DO need to handle erroneous max input of 1000, 1100, 1200, or 11100 output at invalid price range
         if (lowerBound > upperBound) {
             console.error('Invalid price range.');
             return `${this.name} - Invalid price range.`;
